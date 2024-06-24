@@ -1,0 +1,16 @@
+.Title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6vh 5vw;
+  background-color: #FFBA06;
+}
+
+.Title p {
+  color: #fff;
+  font-size: 2em;
+}
+
+.Title span {
+  font-weight: 700;
+}

@@ -1,0 +1,29 @@
+.conten-rigth {
+  display: flex;
+  padding: 10vh 5vw;
+  background-image: url("/yellow.png");
+  background-size: cover;
+  align-items: center;
+  color: #ffffff;
+}
+
+.conten-rigth h2 {
+  font-size: 2.5em;
+  margin-left: 3vw;
+  margin-bottom: 5vh;
+}
+
+.conten-rigth p {
+  margin-bottom: 5vh;
+  margin-left: 3vw;
+}
+
+.conten-rigth button {
+  margin-left: 3vw;
+}
+
+@media (max-width:800px) {
+  .conten-rigth {
+    flex-direction: column;
+  }
+}

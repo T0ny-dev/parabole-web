@@ -1,0 +1,58 @@
+
+.bg-video {
+  background-image: url("/bg-black.png");
+  padding: 10vh 5vw;
+}
+
+.Video {
+  display: flex;
+  align-items: center;
+  background-image: url("/Frame.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.bg-seccion {
+  color: #fff;
+}
+
+
+.bg-seccion h2 {
+  font-size: 2.5em;
+  margin-bottom: 3vh;
+}
+
+.bg-seccion p {
+  max-width: 500px;
+  margin-bottom: 5vh;
+}
+
+.Video img {
+  width: 600px;
+}
+
+.primary-button {
+  background: linear-gradient(to right, #FFD27C, #FFFFFF);
+  border: 2px solid #3D4039;
+  border-radius: 100px; /* Puedes ajustar el radio según lo necesites */
+  color: #3D4039;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.primary-button span {
+  font-weight: 700;
+}
+
+@media (max-width: 800px) {
+  .Video {
+    display: flex;
+    flex-direction: column;
+  }
+}

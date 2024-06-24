@@ -1,0 +1,20 @@
+.branding {
+  display: flex;
+  padding: 10vh 5vw;
+  align-items: center;
+}
+
+.branding h2 {
+  font-size: 2em;
+  margin-bottom: 5vh;
+}
+
+.branding p {
+  margin-bottom: 5vh;
+}
+
+@media (max-width:800px){
+  .branding {
+    flex-direction: column-reverse;
+  }
+}

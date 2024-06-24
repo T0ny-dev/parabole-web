@@ -1,0 +1,15 @@
+.Hero {
+  display: flex;
+  height: 80vh;
+  width: 100%;
+  background-image: url("/hero.png");
+  background-size: cover;
+  background-position:center-bottom;
+}
+
+@media (max-width:800px) {
+  .Hero  {
+    background-size: cover;
+    background-position: center;
+  }
+}

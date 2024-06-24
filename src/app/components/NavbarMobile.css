@@ -1,0 +1,48 @@
+/* Estilos básicos para el navbar */
+.navbar {
+  display: none; /* Oculto por defecto */
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.navbar a {
+  color: rgb(39, 39, 39);
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+
+/* Botón para togglear el menú */
+.navbar-toggler {
+  background: none;
+  border: none;
+  color: rgb(53, 53, 53);
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.navbar-brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilos cuando el menú está abierto */
+.navbar-menu {
+  display: none;
+  flex-direction: column;
+}
+
+.navbar-menu.open {
+  display: flex;
+}
+
+/* Estilos responsivos */
+@media (max-width: 1100px) {
+  .navbar {
+    display: flex;
+  }
+}
