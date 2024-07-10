@@ -4,10 +4,10 @@ import "./Branded.css";
 const Branded = () => {
   // Array de URLs de las imágenes de los logros de los clientes
   const logos = [
-    "/01logo.png",
-    "/02logo.png",
-    "/03logo.png",
-    "/04logo.png",
+    "https://i.ibb.co/cwnWwVF/01Logo.png",
+    "https://i.ibb.co/6Y973Mj/02Logo.png",
+    "https://i.ibb.co/XSDvz8z/03Logo.png",
+    "https://i.ibb.co/PY7Dg72/04Logo.png",
   ];
 
   return (
