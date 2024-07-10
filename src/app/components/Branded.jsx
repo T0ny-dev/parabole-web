@@ -1,7 +1,7 @@
 import React from "react";
-import "./Logos.css";
+import "./Branded.css";
 
-const Logos = () => {
+const Branded = () => {
   // Array de URLs de las imágenes de los logros de los clientes
   const logos = [
     "/01logo.png",
@@ -21,4 +21,4 @@ const Logos = () => {
   );
 };
 
-export default Logos;
+export default Branded;
