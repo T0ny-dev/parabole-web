@@ -12,7 +12,7 @@ import PaginasWeb from "./components/PaginaWeb";
 import Branding from "./components/Branding";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
-import Logos from "./components/logos";
+import Logos from "./components/logos.jsx";
 import "./globals.css"
 
 export default function Home() {
