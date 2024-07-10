@@ -2,7 +2,7 @@ import "./Description.css"
 
 function Description () {
   return (
-    <diV className="Description" >
+    <diV className="Description" id="mision" >
         <img src="/description.svg" alt="" />
         <p>Parabole Media Creators es una agencia dedicada a impulsar tu marca a través de tres pilares fundamentales: creación de contenido en video, gestión de redes sociales e identidad corporativa.</p>
         <p>

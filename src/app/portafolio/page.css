@@ -6,37 +6,32 @@
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
-  font-size: 1em;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
 .portfolio-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
-  justify-content: center;
 }
 
 .portfolio-card {
-  background-color: #fff;
+  background: #fff;
+  padding: 20px;
   border: 1px solid #ddd;
-  border-radius: 10px;
-  overflow: hidden;
-  width: 100%;
-  max-width: 300px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-.portfolio-card img,
-.portfolio-card video {
-  width: 100%;
+.portfolio-card video,
+.portfolio-card iframe,
+.portfolio-card img {
+  max-width: 100%;
   height: auto;
-}
-
-.portfolio-card h3 {
-  margin: 10px 0;
+  margin-bottom: 10px;
+  border-radius: 4px;
 }
 
 .pagination {
@@ -46,26 +41,19 @@
 }
 
 .page-button {
-  background-color: #007bff;
+  background: #007bff;
   color: white;
   border: none;
   padding: 10px 15px;
   margin: 0 5px;
-  border-radius: 5px;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .page-button.active {
-  background-color: #0056b3;
+  background: #0056b3;
 }
 
 .page-button:hover {
-  background-color: #0056b3;
-}
-
-@media (max-width: 600px) {
-  .portfolio-grid {
-    flex-direction: column;
-    align-items: center;
-  }
+  background: #0056b3;
 }

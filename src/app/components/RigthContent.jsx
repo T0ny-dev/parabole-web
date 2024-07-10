@@ -1,17 +1,8 @@
 "use client"
-import React, { useState } from "react";
 import "./RigthContent.css";
 
 function RigthContent() {
-  const [showModal, setShowModal] = useState(false);
 
-  const openModal = () => {
-    setShowModal(true);
-  };
-
-  const closeModal = () => {
-    setShowModal(false);
-  };
 
   return (
     <div className="conten-rigth">
@@ -19,36 +10,16 @@ function RigthContent() {
         <img src="/dron.png" alt="" />
       </div>
       <div>
-        <h2>FOTOGRAFÍA</h2>
+        <h2>FOTOGRAFÍA CON DRON</h2>
         <p>
-          En Parabolle, ofrecemos servicios de fotografía profesional para
-          capturar tus momentos más importantes con creatividad y precisión.
-          Nuestro equipo de fotógrafos expertos utiliza la última tecnología y
-          técnicas innovadoras para asegurar que cada imagen cuente una historia
-          única.
+        En Parabolle, ofrecemos servicios de fotografía con dron que llevan tus imágenes a nuevas alturas, capturando vistas impresionantes y perspectivas únicas que no se pueden obtener desde el suelo. Nuestro equipo de pilotos de dron certificados y fotógrafos experimentados utiliza tecnología de última generación para asegurar que cada toma aérea sea de la más alta calidad. 
         </p>
-        <button className="primary-button" onClick={openModal}>
-          GALERÍA
+        <a href="/portafolio">
+        <button className="primary-button">
+          PORTAFOLIO
         </button>
+        </a>
       </div>
-
-      {showModal && (
-        <div className="modal">
-          <div className="modal-content">
-            <span className="close-button" onClick={closeModal}>
-              &times;
-            </span>
-            <div className="image-gallery">
-              <img src="/image1.jpg" alt="Image 1" />
-              <img src="/image2.jpg" alt="Image 2" />
-              <img src="/image3.jpg" alt="Image 3" />
-              <img src="/image4.jpg" alt="Image 4" />
-              {/* Agrega más imágenes según sea necesario */}
-            </div>
-            <button className="more-button">VER MÁS</button>
-          </div>
-        </div>
-      )}
     </div>
   );
 }

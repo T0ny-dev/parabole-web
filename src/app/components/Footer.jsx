@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-column">
         <img src="/logo-white.png" alt="logo" className="footer-logo" />
-        <p className="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        <p className="footer-text">En Parabole Productions somos especialistas en la producción de videos corporativos. Realizamos tanto videos de tipo institucional hasta de inducción o capacitación de personal coporativo.</p>
       </div>
       <div className="footer-column">
         <h4>Enlaces</h4>
@@ -26,7 +26,7 @@ const Footer = () => {
       </div>
       <div className="footer-column">
         <h4>Información Adicional</h4>
-        <p className="footer-text">Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+        <p className="footer-text">Parabole Media Creators es una agencia dedicada a impulsar tu marca a través de tres pilares fundamentales: creación de contenido en video, gestión de redes sociales e identidad corporativa.</p>
       </div>
     </footer>
   );

@@ -12,6 +12,7 @@ import PaginasWeb from "./components/PaginaWeb";
 import Branding from "./components/Branding";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
+import Logos from "./components/logos";
 import "./globals.css"
 
 export default function Home() {
@@ -34,6 +35,7 @@ export default function Home() {
       <div className="Title_services">
         <h2>Contacto</h2>
       </div>
+      <Logos/>
       <ContactForm/>
       <Footer/>
     </main>

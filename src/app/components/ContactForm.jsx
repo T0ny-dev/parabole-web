@@ -21,7 +21,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className='form-bg'>
+    <div className='form-bg'id='contacto'>
     <form ref={form} onSubmit={sendEmail} className="contact-form">
       <label>Nombre</label>
       <input type="text" name="name" required placeholder='tu nombre' />

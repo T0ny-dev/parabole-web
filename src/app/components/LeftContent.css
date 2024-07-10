@@ -55,7 +55,7 @@
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
-  max-width: 700px;
+  max-width: 80vw;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   animation: fadeIn 0.3s;
 }
@@ -88,6 +88,13 @@
   height: 100px;
   object-fit: cover;
   border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.image-gallery img.selected {
+  transform: scale(2.5);
+  z-index: 2;
 }
 
 .more-button {

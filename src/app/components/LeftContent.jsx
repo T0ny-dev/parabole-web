@@ -5,6 +5,7 @@ import "./LeftContent.css";
 
 function LeftContent() {
   const [showModal, setShowModal] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const openModal = () => {
     setShowModal(true);
@@ -12,6 +13,11 @@ function LeftContent() {
 
   const closeModal = () => {
     setShowModal(false);
+    setSelectedImage(null); // Reset selected image when closing modal
+  };
+
+  const handleImageClick = (imageSrc) => {
+    setSelectedImage(imageSrc);
   };
 
   return (
@@ -40,13 +46,19 @@ function LeftContent() {
               &times;
             </span>
             <div className="image-gallery">
-              <img src="/image1.jpg" alt="Image 1" />
-              <img src="/image2.jpg" alt="Image 2" />
-              <img src="/image3.jpg" alt="Image 3" />
-              <img src="/image4.jpg" alt="Image 4" />
-              {/* Agrega más imágenes según sea necesario */}
+              {["/01Fotos.jpg", "/02Fotos.jpg", "/03Fotos.jpg", "/04Fotos.jpg", "/05Fotos.jpg", "/06Fotos.jpg", "/07Fotos.jpg", "/08Fotos.jpg", "/09Fotos.jpg", "/010Fotos.jpg", "/011Fotos.jpg"].map((imageSrc) => (
+                <img
+                  key={imageSrc}
+                  src={imageSrc}
+                  alt="Image"
+                  className={selectedImage === imageSrc ? "selected" : ""}
+                  onClick={() => handleImageClick(imageSrc)}
+                />
+              ))}
             </div>
-            <button className="more-button">VER MÁS</button>
+            <a href="/portafolio">
+              <button className="more-button">VER MÁS</button>
+            </a>
           </div>
         </div>
       )}

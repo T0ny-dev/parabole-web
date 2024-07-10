@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useState } from "react";
 import Navbar from "../components/NavbarMobiles";
@@ -7,18 +7,25 @@ import Footer from "../components/Footer";
 import "./page.css";
 
 const samplePortfolio = [
-  { id: 1, type: "video", title: "Corporate Video", src: "/video1.mp4" },
-  { id: 2, type: "photo", title: "Event Photo", src: "/photo1.jpg" },
-  { id: 3, type: "image", title: "Product Image", src: "/image1.png" },
-  { id: 1, type: "video", title: "Corporate Video", src: "/video1.mp4" },
-  { id: 2, type: "photo", title: "Event Photo", src: "/photo1.jpg" },
-  { id: 3, type: "image", title: "Product Image", src: "/image1.png" },
-  { id: 1, type: "video", title: "Corporate Video", src: "/video1.mp4" },
-  { id: 2, type: "photo", title: "Event Photo", src: "/photo1.jpg" },
-  { id: 3, type: "image", title: "Product Image", src: "/image1.png" },
-  { id: 2, type: "photo", title: "Event Photo", src: "/photo1.jpg" },
-  { id: 3, type: "image", title: "Product Image", src: "/image1.png" },
-  // Agrega más elementos de muestra según sea necesario
+  { id: 1, type: "youtube", src: "https://www.youtube.com/embed/7At5lEVjgjs?rel=0" },
+  { id: 2, type: "photo", src: "/01Fotos.jpg" },
+  { id: 3, type: "image", src: "/02Fotos.jpg" },
+  { id: 5, type: "photo", src: "/03Fotos.jpg" },
+  { id: 6, type: "image", src: "/04Fotos.jpg" },
+  { id: 8, type: "photo", src: "/05Fotos.jpg" },
+  { id: 9, type: "image", src: "/06Fotos.jpg" },
+  { id: 10, type: "photo", src: "/07Fotos.jpg" },
+  { id: 11, type: "image", src: "/08Fotos.jpg" },
+  { id: 12, type: "youtube", src: "https://www.youtube.com/embed/NvOPR_Uml_4?rel=0" },
+  { id: 13, type: "youtube", src: "https://www.youtube.com/embed/YSqFruDp8A8?rel=0" },
+  { id: 14, type: "youtube", src: "https://www.youtube.com/embed/YSqFruDp8A8?rel=0" },
+  { id: 15, type: "youtube", src: "https://www.youtube.com/embed/6DcVLdTcl0s?rel=0" },
+  { id: 16, type: "youtube", src: "https://www.youtube.com/embed/sdNMSHbjW-s?rel=0" },
+  { id: 17, type: "youtube", src: "https://www.youtube.com/embed/lOisgR0NuwU?rel=0" },
+  { id: 18, type: "youtube", src: "https://www.youtube.com/embed/Wxq4FKx9wY0?rel=0" },
+  { id: 19, type: "youtube", src: "https://www.youtube.com/embed/0FEDhVEEQ_A?rel=0" },
+  { id: 20, type: "youtube", src: "https://www.youtube.com/embed/ky1CP6hmc_4?rel=0" },
+  { id: 21, type: "youtube", src: "https://www.youtube.com/embed/lTW8Q6exsqM?rel=0" },
 ];
 
 function Portafolio() {
@@ -27,7 +34,7 @@ function Portafolio() {
   const itemsPerPage = 9;
 
   const filteredPortfolio = samplePortfolio.filter((item) =>
-    item.title.toLowerCase().includes(searchTerm.toLowerCase())
+    item.src.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   const paginatedPortfolio = filteredPortfolio.slice(
@@ -42,13 +49,6 @@ function Portafolio() {
       <Header />
       <Navbar />
       <div className="portfolio-container">
-        <input
-          type="text"
-          placeholder="Buscar por nombre..."
-          className="search-input"
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
         <div className="portfolio-grid">
           {paginatedPortfolio.map((item) => (
             <div key={item.id} className="portfolio-card">
@@ -58,9 +58,18 @@ function Portafolio() {
                   Your browser does not support the video tag.
                 </video>
               )}
-              {item.type === "photo" && <img src={item.src} alt={item.title} />}
-              {item.type === "image" && <img src={item.src} alt={item.title} />}
-              <h3>{item.title}</h3>
+              {item.type === "youtube" && (
+                <iframe
+                  width="560"
+                  height="315"
+                  src={item.src}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              )}
+              {item.type === "photo" && <img src={item.src} alt="" />}
+              {item.type === "image" && <img src={item.src} alt="" />}
             </div>
           ))}
         </div>
