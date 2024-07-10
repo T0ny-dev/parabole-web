@@ -46,7 +46,7 @@ function LeftContent() {
               &times;
             </span>
             <div className="image-gallery">
-              {["/01Fotos.jpg", "/02Fotos.jpg", "/03Fotos.jpg", "/04Fotos.jpg", "/05Fotos.jpg", "/06Fotos.jpg", "/07Fotos.jpg", "/08Fotos.jpg", "/09Fotos.jpg", "/010Fotos.jpg", "/011Fotos.jpg"].map((imageSrc) => (
+              {["/01Fotos.jpg", "/02Fotos.jpg", "/03Fotos.jpg", "/04Fotos.jpg", "/05Fotos.jpg", "/06Fotos.jpg", "/07Fotos.jpg", "/09Fotos.jpg", "/010Fotos.jpg"].map((imageSrc) => (
                 <img
                   key={imageSrc}
                   src={imageSrc}
