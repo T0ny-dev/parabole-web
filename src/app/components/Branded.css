@@ -4,6 +4,10 @@
   justify-content: center;
   gap: 20px;
   padding: 20px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
 }
 
 .logo-item {
@@ -12,10 +16,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.5s ease-in-out;
 }
 
 .logo-item img {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+}
+
+.spin-out {
+  transform: rotateX(90deg);
+}
+
+.spin-in {
+  transform: rotateX(0);
 }
