@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-column">
         <img src="/logo-white.png" alt="logo" className="footer-logo" />
-        <p className="footer-text">En Parabole Productions somos especialistas en la producción de videos corporativos. Realizamos tanto videos de tipo institucional hasta de inducción o capacitación de personal coporativo.</p>
+        <p className="footer-text">En Parabole Media Creators somos especialistas en la producción de videos corporativos. Realizamos tanto videos de tipo institucional hasta de inducción o capacitación de personal coporativo.</p>
       </div>
       <div className="footer-column">
         <h4>Enlaces</h4>
